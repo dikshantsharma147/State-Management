@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.whole{
+    padding: 2% 20% 2% 20%;
+}
+.header,.phone-email,.full-name,.subject,.address,.PP,.CC,.pc,.com,.design,.mess{
+    padding-top: 1%;
+}
+input{
+    width: 100%;
+}
+
+.phone-email{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(2,auto);
+}
+.PP,.pc,.CC{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(2,auto);
+}
+.input-1 input,.input-2 input,.input-3 input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+
+}
+.name::after,.number::after,.email-1::after,.subject-1::after,.address::after,.country::after,.city::after,.Province::after,.state::after ,.pincode::after,.ci::after,.Company::after,.design::after{
+    content: " *";
+    color: red;
+}
+.button{
+    border: 2px solid black;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: black;
+}
+.phone-input {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+ 
+  #countrySelect {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  #phone {
+    flex: 2;
+    padding: 10px;
+  }
